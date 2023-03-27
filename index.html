@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <header>
+        <img src="./imagens/telefone.png">
+        <h1>
+            Meus contatos 
+        </h1>
+    </header>
+	<div class="app">
+		<div class="content-form">
+			<form id="app-form">
+				<div class="input-group">
+					<input id="pessoaNome" placeholder="Primeiro Nome"/>
+					<input id="pessoaSobrenome" placeholder="Sobrenome"/>
+				</div>
+				<div class="input-group">
+					<input type="number" id="pessoaTelefone" placeholder="DDD + Telefone" />
+					<button class="btn-app" id="btnCadastrar" type="submit">Cadastrar</button>
+					<button class="btn-app" id="btnEditar" type="button" style="display: none;">Editar</button> <!-- esse botao está oculto na tela-->
+				</div>
+			</form>
+		</div>		
+		<div class="content-list">
+			<div class="content-list-container">
+				<ul id="listaPessoas"></ul>
+			</div>
+		</div>
+        <div class="content-actions">
+			<div class="content-actions-buttons">
+				<button class="btn-app" id="btnOrdenar">Ordenar</button>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
